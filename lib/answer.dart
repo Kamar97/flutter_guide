@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class Answer extends StatelessWidget {
   @override
-   String questionText;
+  final String questionText;
   final Function buttonAction;
-  Answer(this.buttonAction,this.questionText);
+  Answer(this.buttonAction, this.questionText);
   Widget build(BuildContext context) {
-    return RaisedButton(child: Text(questionText), onPressed: buttonAction);
+    return Container(
+        child:
+            RaisedButton(child: Text(questionText), onPressed: buttonAction));
   }
 }
